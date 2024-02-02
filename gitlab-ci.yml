@@ -1,0 +1,6 @@
+pages:
+  stage: deploy
+  script:
+    - cp -rf msite/public/* /data/www/XIAZR-docs-site/bomb-manual
+  rules:
+    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
