@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bomb-Defusal Manual</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <script src="js/action_1.js"></script>
+</head>
+
+<body>
+    <div class="w3-sidebar w3-bar-block w3_light-grey w3-card" style="width: 20%;">
+        <div class="w3-bar-item" style="text-align:center; font-size:x-large; margin-top:5%; margin-bottom:5%;">目录</div>
+
+        <a href="#title-1" class="w3-bar-item w3-button w3-block w3-left-aligh">通用信息</a>
+        <a href="#title-2" class="w3-bar-item w3-button w3-block w3-left-aligh">线路模块</a>
+        <a href="#title-3" class="w3-bar-item w3-button w3-block w3-left-aligh">按钮模块</a>
+        <a href="#title-4" class="w3-bar-item w3-button w3-block w3-left-aligh">键盘模块</a>
+        <a href="#title-5" class="w3-bar-item w3-button w3-block w3-left-aligh">四色方块</a>
+        <a href="#title-6" class="w3-bar-item w3-button w3-block w3-left-aligh">他叫模块</a>
+        <a href="#title-7" class="w3-bar-item w3-button w3-block w3-left-aligh">记忆模块</a>
+        <a href="#title-8" class="w3-bar-item w3-button w3-block w3-left-aligh">摩斯电码</a>
+        <a href="#title-9" class="w3-bar-item w3-button w3-block w3-left-aligh">复杂线路</a>
+        <a href="#title-10" class="w3-bar-item w3-button w3-block w3-left-aligh">顺序线路</a>
+        <a href="#title-11" class="w3-bar-item w3-button w3-block w3-left-aligh">迷宫模块</a>
+        <a href="#title-12" class="w3-bar-item w3-button w3-block w3-left-aligh">密码模块</a>
+        <a href="#title-13" class="w3-bar-item w3-button w3-block w3-left-aligh">旋钮模块</a>
+    </div>
+
+    <div style="margin-left: 25%;">
+        <h1><a id="title-1" class="anchor" href="#title-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>通用信息</h1>
+
+        <p>序列号末位：<button class="w3-button w3-gray" id="btn_serial_last_1" onclick="actFunc('serial_last', 1)">奇数</button><button class="w3-button w3-gray" id="btn_serial_last_0" onclick="actFunc('serial_last', 0)">偶数</button></p>
+        <p>序列号含元音：<button class="w3-button w3-gray" id="btn_serial_vowel_1" onclick="actFunc('serial_vowel', 1)">含元音</button><button class="w3-button w3-gray" id="btn_serial_vowel_0" onclick="actFunc('serial_vowel', 0)">不含元音</button></p>
+        <p>电池数量：<button class="w3-button w3-gray" id="btn_battery_num_0" onclick="actFunc('battery_num', 0)">0 个</button><button class="w3-button w3-gray" id="btn_battery_num_1" onclick="actFunc('battery_num', 1)">1 个</button><button class="w3-button w3-gray" id="btn_battery_num_2" onclick="actFunc('battery_num', 2)">2 个以上</button></p>
+        <p>CAR 指示灯：<button class="w3-button w3-gray" id="btn_car_light_1" onclick="actFunc('car_light', 1)">亮</button><button class="w3-button w3-gray" id="btn_car_light_0" onclick="actFunc('car_light', 0)">不亮</button></p>
+        <p>FRK 指示灯：<button class="w3-button w3-gray" id="btn_frk_light_1" onclick="actFunc('frk_light', 1)">亮</button><button class="w3-button w3-gray" id="btn_frk_light_0" onclick="actFunc('frk_light', 0)">不亮</button></p>
+        <p>Parallel 端口：<button class="w3-button w3-gray" id="btn_parallel_port_1" onclick="actFunc('parallel_port', 1)">有</button><button class="w3-button w3-gray" id="btn_parallel_port_0" onclick="actFunc('parallel_port', 0)">没有</button></p>
+        <script>reset1();</script>
+        
+        <h1><a id="title_2" class="anchor" href="#title_2" aria-hidden="true"><span class="octicon octicon-link"></span></a>线路模块</h1>
+
+        <h1><a id="title-3" class="anchor" href="#title-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>按钮模块</h1>
+
+        <h1><a id="title-4" class="anchor" href="#title-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>键盘模块</h1>
+
+        <h1><a id="title-5" class="anchor" href="#title-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>四色方块</h1>
+
+        <h1><a id="title-6" class="anchor" href="#title-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>他叫模块</h1>
+
+        <h1><a id="title-7" class="anchor" href="#title-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>记忆模块</h1>
+
+        <h1><a id="title-8" class="anchor" href="#title-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>摩斯电码</h1>
+
+        <h1><a id="title-9" class="anchor" href="#title-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>复杂线路</h1>
+
+        <h1><a id="title-10" class="anchor" href="#title-10" aria-hidden="true"><span class="octicon octicon-link"></span></a>顺序线路</h1>
+
+        <h1><a id="title-11" class="anchor" href="#title-11" aria-hidden="true"><span class="octicon octicon-link"></span></a>迷宫模块</h1>
+
+        <h1><a id="title-12" class="anchor" href="#title-12" aria-hidden="true"><span class="octicon octicon-link"></span></a>密码模块</h1>
+
+        <h1><a id="title-13" class="anchor" href="#title-13" aria-hidden="true"><span class="octicon octicon-link"></span></a>旋钮模块</h1>
+    </div>
+</body>
