@@ -7,6 +7,7 @@
     <title>Bomb-Defusal Manual</title>
     <link rel="stylesheet" href="css/w3.css">
     <script src="js/action_1.js"></script>
+    <script src="js/action_4.js"></script>
 </head>
 
 <body>
@@ -28,15 +29,15 @@
         <a href="#title-13" class="w3-bar-item w3-button w3-block w3-left-aligh">旋钮模块</a>
     </div>
 
-    <div style="margin-left: 25%;">
+    <div style="margin-left: 25%; margin-right: 10%;">
         <h1><a id="title-1" class="anchor" href="#title-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>通用信息</h1>
 
-        <p>序列号末位：<button class="w3-button w3-gray" id="btn_serial_last_1" onclick="actFunc('serial_last', 1)">奇数</button><button class="w3-button w3-gray" id="btn_serial_last_0" onclick="actFunc('serial_last', 0)">偶数</button></p>
-        <p>序列号含元音：<button class="w3-button w3-gray" id="btn_serial_vowel_1" onclick="actFunc('serial_vowel', 1)">含元音</button><button class="w3-button w3-gray" id="btn_serial_vowel_0" onclick="actFunc('serial_vowel', 0)">不含元音</button></p>
-        <p>电池数量：<button class="w3-button w3-gray" id="btn_battery_num_0" onclick="actFunc('battery_num', 0)">0 个</button><button class="w3-button w3-gray" id="btn_battery_num_1" onclick="actFunc('battery_num', 1)">1 个</button><button class="w3-button w3-gray" id="btn_battery_num_2" onclick="actFunc('battery_num', 2)">2 个以上</button></p>
-        <p>CAR 指示灯：<button class="w3-button w3-gray" id="btn_car_light_1" onclick="actFunc('car_light', 1)">亮</button><button class="w3-button w3-gray" id="btn_car_light_0" onclick="actFunc('car_light', 0)">不亮</button></p>
-        <p>FRK 指示灯：<button class="w3-button w3-gray" id="btn_frk_light_1" onclick="actFunc('frk_light', 1)">亮</button><button class="w3-button w3-gray" id="btn_frk_light_0" onclick="actFunc('frk_light', 0)">不亮</button></p>
-        <p>Parallel 端口：<button class="w3-button w3-gray" id="btn_parallel_port_1" onclick="actFunc('parallel_port', 1)">有</button><button class="w3-button w3-gray" id="btn_parallel_port_0" onclick="actFunc('parallel_port', 0)">没有</button></p>
+        <p>序列号末位：<button class="w3-button w3-gray" id="btn_serial_last_1" onclick="actFunc1('serial_last', 1)">奇数</button><button class="w3-button w3-gray" id="btn_serial_last_0" onclick="actFunc1('serial_last', 0)">偶数</button></p>
+        <p>序列号含元音：<button class="w3-button w3-gray" id="btn_serial_vowel_1" onclick="actFunc1('serial_vowel', 1)">含元音</button><button class="w3-button w3-gray" id="btn_serial_vowel_0" onclick="actFunc1('serial_vowel', 0)">不含元音</button></p>
+        <p>电池数量：<button class="w3-button w3-gray" id="btn_battery_num_0" onclick="actFunc1('battery_num', 0)">0 个</button><button class="w3-button w3-gray" id="btn_battery_num_1" onclick="actFunc1('battery_num', 1)">1 个</button><button class="w3-button w3-gray" id="btn_battery_num_2" onclick="actFunc1('battery_num', 2)">2 个以上</button></p>
+        <p>CAR 指示灯：<button class="w3-button w3-gray" id="btn_car_light_1" onclick="actFunc1('car_light', 1)">亮</button><button class="w3-button w3-gray" id="btn_car_light_0" onclick="actFunc1('car_light', 0)">不亮</button></p>
+        <p>FRK 指示灯：<button class="w3-button w3-gray" id="btn_frk_light_1" onclick="actFunc1('frk_light', 1)">亮</button><button class="w3-button w3-gray" id="btn_frk_light_0" onclick="actFunc1('frk_light', 0)">不亮</button></p>
+        <p>Parallel 端口：<button class="w3-button w3-gray" id="btn_parallel_port_1" onclick="actFunc1('parallel_port', 1)">有</button><button class="w3-button w3-gray" id="btn_parallel_port_0" onclick="actFunc1('parallel_port', 0)">没有</button></p>
         <script>reset1();</script>
         
         <h1><a id="title_2" class="anchor" href="#title_2" aria-hidden="true"><span class="octicon octicon-link"></span></a>线路模块</h1>
@@ -44,6 +45,39 @@
         <h1><a id="title-3" class="anchor" href="#title-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>按钮模块</h1>
 
         <h1><a id="title-4" class="anchor" href="#title-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>键盘模块</h1>
+
+        <p>请依次点击四个符号（四次点击分别用红、黄、绿、蓝表示）：</p>
+        <p>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_0" onclick="actFunc4(0)"><img src="img/keyboard-0.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_0"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_1" onclick="actFunc4(1)"><img src="img/keyboard-1.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_1"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_2" onclick="actFunc4(2)"><img src="img/keyboard-2.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_2"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_3" onclick="actFunc4(3)"><img src="img/keyboard-3.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_3"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_4" onclick="actFunc4(4)"><img src="img/keyboard-4.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_4"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_5" onclick="actFunc4(5)"><img src="img/keyboard-5.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_5"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_6" onclick="actFunc4(6)"><img src="img/keyboard-6.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_6"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_7" onclick="actFunc4(7)"><img src="img/keyboard-7.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_7"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_8" onclick="actFunc4(8)"><img src="img/keyboard-8.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_8"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_9" onclick="actFunc4(9)"><img src="img/keyboard-9.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_9"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_10" onclick="actFunc4(10)"><img src="img/keyboard-10.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_10"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_11" onclick="actFunc4(11)"><img src="img/keyboard-11.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_11"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_12" onclick="actFunc4(12)"><img src="img/keyboard-12.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_12"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_13" onclick="actFunc4(13)"><img src="img/keyboard-13.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_13"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_14" onclick="actFunc4(14)"><img src="img/keyboard-14.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_14"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_15" onclick="actFunc4(15)"><img src="img/keyboard-15.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_15"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_16" onclick="actFunc4(16)"><img src="img/keyboard-16.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_16"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_17" onclick="actFunc4(17)"><img src="img/keyboard-17.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_17"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_18" onclick="actFunc4(18)"><img src="img/keyboard-18.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_18"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_19" onclick="actFunc4(19)"><img src="img/keyboard-19.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_19"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_20" onclick="actFunc4(20)"><img src="img/keyboard-20.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_20"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_21" onclick="actFunc4(21)"><img src="img/keyboard-21.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_21"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_22" onclick="actFunc4(22)"><img src="img/keyboard-22.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_22"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_23" onclick="actFunc4(23)"><img src="img/keyboard-23.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_23"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_24" onclick="actFunc4(24)"><img src="img/keyboard-24.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_24"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_25" onclick="actFunc4(25)"><img src="img/keyboard-25.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_25"></div></div>
+            <div class="w3-button w3-card-4 w3-display-container w3-white" style="width: 80px;" id="btn_keyboard_26" onclick="actFunc4(26)"><img src="img/keyboard-26.png" style="width: 100%;"><div class="w3-display-topleft w3-container" id="txt_keyboard_26"></div></div>
+        </p>
+        <p id="result_4">按键顺序：</p>
+        <p><button class="w3-button w3-green" onclick="reset4()">重置</button><button class="w3-button w3-blue" onclick="undo4()">撤销</button></p>
 
         <h1><a id="title-5" class="anchor" href="#title-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>四色方块</h1>
 
