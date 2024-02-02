@@ -10,11 +10,11 @@ var btn_color_2 = [
 ];
 var btn_color_active_2 = [
     'w3-gray',
-    'w3-red w3-hover-red',
-    'w3-blue w3-hover-blue',
-    'w3-yellow w3-hover-yellow',
-    'w3-black w3-hover-black',
-    'w3-white w3-hover-white',
+    'w3-red w3-hover-red w3-card-4',
+    'w3-blue w3-hover-blue w3-card-4',
+    'w3-yellow w3-hover-yellow w3-card-4',
+    'w3-black w3-hover-black w3-card-4',
+    'w3-white w3-hover-white w3-card-4',
 ];
 
 // 按钮交互
