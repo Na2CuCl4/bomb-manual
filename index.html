@@ -7,6 +7,7 @@
     <title>Bomb-Defusal Manual</title>
     <link rel="stylesheet" href="css/w3.css">
     <script src="js/action_1.js"></script>
+    <script src="js/action_2.js"></script>
     <script src="js/action_4.js"></script>
     <script src="js/action_9.js"></script>
     <script src="js/action_10.js"></script>
@@ -44,6 +45,58 @@
         <script>reset1();</script>
         
         <h1><a id="title-2" class="anchor" href="#title_2" aria-hidden="true"><span class="octicon octicon-link"></span></a>线路模块</h1>
+
+        <p>请选择每根线的颜色：</p>
+        <p id="p_2_0">
+            第 1 根：
+            <button class="w3-button w3-pale-red w3-hover-pale-red" id="btn_2_0_1" onclick="actFunc2(0, 1)">红色</button>
+            <button class="w3-button w3-pale-blue w3-hover-pale-blue" id="btn_2_0_2" onclick="actFunc2(0, 2)">蓝色</button>
+            <button class="w3-button w3-pale-yellow w3-hover-pale-yellow" id="btn_2_0_3" onclick="actFunc2(0, 3)">黄色</button>
+            <button class="w3-button w3-gray w3-hover-gray" id="btn_2_0_4" onclick="actFunc2(0, 4)">黑色</button>
+            <button class="w3-button w3-light-gray w3-hover-light-gray" id="btn_2_0_5" onclick="actFunc2(0, 5)">白色</button>
+        </p>
+        <p id="p_2_1" style="visibility: hidden;">
+            第 2 根：
+            <button class="w3-button w3-pale-red w3-hover-pale-red" id="btn_2_1_1" onclick="actFunc2(1, 1)">红色</button>
+            <button class="w3-button w3-pale-blue w3-hover-pale-blue" id="btn_2_1_2" onclick="actFunc2(1, 2)">蓝色</button>
+            <button class="w3-button w3-pale-yellow w3-hover-pale-yellow" id="btn_2_1_3" onclick="actFunc2(1, 3)">黄色</button>
+            <button class="w3-button w3-gray w3-hover-gray" id="btn_2_1_4" onclick="actFunc2(1, 4)">黑色</button>
+            <button class="w3-button w3-light-gray w3-hover-light-gray" id="btn_2_1_5" onclick="actFunc2(1, 5)">白色</button>
+        </p>
+        <p id="p_2_2" style="visibility: hidden;">
+            第 3 根：
+            <button class="w3-button w3-pale-red w3-hover-pale-red" id="btn_2_2_1" onclick="actFunc2(2, 1)">红色</button>
+            <button class="w3-button w3-pale-blue w3-hover-pale-blue" id="btn_2_2_2" onclick="actFunc2(2, 2)">蓝色</button>
+            <button class="w3-button w3-pale-yellow w3-hover-pale-yellow" id="btn_2_2_3" onclick="actFunc2(2, 3)">黄色</button>
+            <button class="w3-button w3-gray w3-hover-gray" id="btn_2_2_4" onclick="actFunc2(2, 4)">黑色</button>
+            <button class="w3-button w3-light-gray w3-hover-light-gray" id="btn_2_2_5" onclick="actFunc2(2, 5)">白色</button>
+        </p>
+        <p id="p_2_3" style="visibility: hidden;">
+            第 4 根：
+            <button class="w3-button w3-pale-red w3-hover-pale-red" id="btn_2_3_1" onclick="actFunc2(3, 1)">红色</button>
+            <button class="w3-button w3-pale-blue w3-hover-pale-blue" id="btn_2_3_2" onclick="actFunc2(3, 2)">蓝色</button>
+            <button class="w3-button w3-pale-yellow w3-hover-pale-yellow" id="btn_2_3_3" onclick="actFunc2(3, 3)">黄色</button>
+            <button class="w3-button w3-gray w3-hover-gray" id="btn_2_3_4" onclick="actFunc2(3, 4)">黑色</button>
+            <button class="w3-button w3-light-gray w3-hover-light-gray" id="btn_2_3_5" onclick="actFunc2(3, 5)">白色</button>
+        </p>
+        <p id="p_2_4" style="visibility: hidden;">
+            第 5 根：
+            <button class="w3-button w3-pale-red w3-hover-pale-red" id="btn_2_4_1" onclick="actFunc2(4, 1)">红色</button>
+            <button class="w3-button w3-pale-blue w3-hover-pale-blue" id="btn_2_4_2" onclick="actFunc2(4, 2)">蓝色</button>
+            <button class="w3-button w3-pale-yellow w3-hover-pale-yellow" id="btn_2_4_3" onclick="actFunc2(4, 3)">黄色</button>
+            <button class="w3-button w3-gray w3-hover-gray" id="btn_2_4_4" onclick="actFunc2(4, 4)">黑色</button>
+            <button class="w3-button w3-light-gray w3-hover-light-gray" id="btn_2_4_5" onclick="actFunc2(4, 5)">白色</button>
+        </p>
+        <p id="p_2_5" style="visibility: hidden;">
+            第 6 根：
+            <button class="w3-button w3-pale-red w3-hover-pale-red" id="btn_2_5_1" onclick="actFunc2(5, 1)">红色</button>
+            <button class="w3-button w3-pale-blue w3-hover-pale-blue" id="btn_2_5_2" onclick="actFunc2(5, 2)">蓝色</button>
+            <button class="w3-button w3-pale-yellow w3-hover-pale-yellow" id="btn_2_5_3" onclick="actFunc2(5, 3)">黄色</button>
+            <button class="w3-button w3-gray w3-hover-gray" id="btn_2_5_4" onclick="actFunc2(5, 4)">黑色</button>
+            <button class="w3-button w3-light-gray w3-hover-light-gray" id="btn_2_5_5" onclick="actFunc2(5, 5)">白色</button>
+        </p>
+        <p id="result_2">操作：</p>
+        <p><button class="w3-button w3-green" onclick="reset2()">重置</button><button class="w3-button w3-blue" onclick="undo2()">删除最后一根</button><button class="w3-button w3-green" onclick="confirm2()">确认</button></p>
 
         <h1><a id="title-3" class="anchor" href="#title-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>按钮模块</h1>
 
@@ -99,7 +152,7 @@
         <h1><a id="title-10" class="anchor" href="#title-10" aria-hidden="true"><span class="octicon octicon-link"></span></a>顺序线路</h1>
 
         <p id="next_10">第 1 根线的颜色是：</p>
-        <p><button class="w3-button w3-red w3-hover-pale-red" id="btn_10_1" onclick="actFunc10(1)">红色</button><button class="w3-button w3-blue w3-hover-pale-blue" id="btn_10_2" onclick="actFunc10(2)">蓝色</button><button class="w3-button w3-black w3-hover-light-gray" id="btn_10_3" onclick="actFunc10(3)">黑色</button><button class="w3-button" id="btn_10_0" onclick="actFunc10(0)">&ensp;空&ensp;</button></p>
+        <p><button class="w3-button w3-red w3-hover-pale-red" id="btn_10_1" onclick="actFunc10(1)">红色</button><button class="w3-button w3-blue w3-hover-pale-blue" id="btn_10_2" onclick="actFunc10(2)">蓝色</button><button class="w3-button w3-black w3-hover-dark-gray" id="btn_10_3" onclick="actFunc10(3)">黑色</button><button class="w3-button" id="btn_10_0" onclick="actFunc10(0)">&ensp;空&ensp;</button></p>
         <p id="prev_10">第 0 根线为空</p>
         <p id="result_10">操作：</p>
         <p><button class="w3-button w3-green" onclick="reset10()">重置</button><button class="w3-button w3-blue" onclick="undo10()">撤销</button></p>
