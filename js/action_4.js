@@ -41,7 +41,7 @@ function actFunc4(btn) {
             // 如果找到
             if (index_list.length == 4) {
                 // 对 index_list 排序
-                var index_list_sort = index_list.slice(0).sort();
+                var index_list_sort = index_list.slice().sort();
                 var result_list = [];
 
                 // 在 txt_keyboard 中显示索引
