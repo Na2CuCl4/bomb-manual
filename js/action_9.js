@@ -2,9 +2,8 @@
 var data_9 = 'CDCBSPDPSBCBSSPD';
 
 // 按钮交互
-function actFunc9() {
+function actFunc9(data) {    
     // 获取数据
-    var data = document.getElementById('input_9').value;
     var action = -1;  // 0 表示不剪断，1 表示剪断
     var result_9 = document.getElementById('result_9');
 
@@ -40,6 +39,3 @@ function actFunc9() {
         result_9.innerHTML = '操作：';
     }
 }
-
-// 添加定时器，每隔 100 毫秒检查一次
-setInterval(actFunc9, 100);

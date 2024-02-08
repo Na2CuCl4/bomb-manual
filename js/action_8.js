@@ -178,8 +178,7 @@ function toMorseCode(word) {
 }
 
 // 匹配
-function actFunc8() {
-    var input = document.getElementById("input_8").value;
+function actFunc8(input) {
     var result = [];
     for (var i = 1; i < 4; i++) {
         result.push(document.getElementById("result_8_" + i));
@@ -256,6 +255,3 @@ function actFunc8() {
         result[i].innerHTML = `原文 ${i + 1}：${wrapSpanColor(inputMorse, color)}<br>匹配 ${i + 1}：${wrapSpan(refMorse)}<br>译文 ${i + 1}：${wrapSpan(ref)}<br>回复 ${i + 1}：${word}，总差别 ${distCount}，频率 ${freq} MHz`;
     }
 }
-
-// 设置定时器
-setInterval(actFunc8, 100);

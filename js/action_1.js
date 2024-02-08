@@ -37,6 +37,10 @@ function actFunc1(btn, value) {
     var data = general_data[btn];
     data.value = value;
 
+    if (btn == "serial_vowel") {
+        actFunc5(value);
+    }
+
     for (var i = 0; i < data.btn_list.length; i++) {
         var btn_element = document.getElementById(data.btn_list[i]);
         if (i == value) {

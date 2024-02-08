@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/w3.css">
     <script src="js/action_1.js"></script>
     <script src="js/action_2.js"></script>
+    <script src="js/action_3.js"></script>
     <script src="js/action_4.js"></script>
+    <script src="js/action_5.js"></script>
+    <script src="js/action_7.js"></script>
     <script src="js/action_8.js"></script>
     <script src="js/action_9.js"></script>
     <script src="js/action_10.js"></script>
@@ -25,7 +28,7 @@
         <a href="#title-3" class="w3-bar-item w3-button w3-block w3-left-aligh">按钮模块</a>
         <a href="#title-4" class="w3-bar-item w3-button w3-block w3-left-aligh">键盘模块</a>
         <a href="#title-5" class="w3-bar-item w3-button w3-block w3-left-aligh">四色方块</a>
-        <a href="#title-6" class="w3-bar-item w3-button w3-block w3-left-aligh">他叫模块</a>
+        <a href="#title-6" class="w3-bar-item w3-button w3-block w3-left-aligh">他叫什么？模块</a>
         <a href="#title-7" class="w3-bar-item w3-button w3-block w3-left-aligh">记忆模块</a>
         <a href="#title-8" class="w3-bar-item w3-button w3-block w3-left-aligh">摩斯电码</a>
         <a href="#title-9" class="w3-bar-item w3-button w3-block w3-left-aligh">复杂线路</a>
@@ -102,6 +105,20 @@
 
         <h1><a id="title-3" class="anchor" href="#title-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>按钮模块</h1>
 
+        <p>
+            <button class="w3-circle w3-pale-red w3-hover-pale-red" id="btn_3_1_1" onclick="actFunc3_1(1)">红色</button>
+            <button class="w3-circle w3-pale-blue w3-hover-pale-blue" id="btn_3_1_2" onclick="actFunc3_1(2)">蓝色</button>
+            <button class="w3-circle w3-pale-yellow w3-hover-pale-yellow" id="btn_3_1_3" onclick="actFunc3_1(3)">黄色</button>
+            <button class="w3-circle w3-light-gray w3-hover-light-gray" id="btn_3_1_4" onclick="actFunc3_1(4)">白色</button>
+        </p>
+        <p>
+            <button class="w3-button w3-gray" id="btn_3_2_1" onclick="actFunc3_2(1)">中止</button>
+            <button class="w3-button w3-gray" id="btn_3_2_2" onclick="actFunc3_2(2)">引爆</button>
+            <button class="w3-button w3-gray" id="btn_3_2_3" onclick="actFunc3_2(3)">按住</button>
+        </p>
+        <p id="result_3">操作：</p>
+        <p><button class="w3-button w3-green" onclick="reset3()">重置</button></p>
+
         <h1><a id="title-4" class="anchor" href="#title-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>键盘模块</h1>
 
         <p>请依次点击四个符号（四次点击分别用红、黄、绿、蓝表示）：</p>
@@ -139,14 +156,117 @@
 
         <h1><a id="title-5" class="anchor" href="#title-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>四色方块</h1>
 
-        <h1><a id="title-6" class="anchor" href="#title-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>他叫模块</h1>
+        <style>
+            .class-table-5 {
+                border-collapse: collapse;
+                width: 80%;
+            }
+            
+            .class-table-5 th, .class-table-5 td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+
+            .class-table-5 tr:nth-child(1) td:nth-child(1) {
+                border: none;
+            }
+        </style>
+        <table id="result_5" class="class-table-5">
+            <tr>
+                <td colspan="2"></td>
+                <td class="w3-red w3-text-white">红色闪光</td>
+                <td class="w3-blue w3-text-white">蓝色闪光</td>
+                <td class="w3-green w3-text-white">绿色闪光</td>
+                <td class="w3-yellow w3-text-black">黄色闪光</td>
+            </tr>
+            <tr>
+                <td rowspan="3">要按的<br>按钮：</td>
+                <td>无失误</td>
+                <td>蓝</td>
+                <td>黄</td>
+                <td>绿</td>
+                <td>红</td>
+            </tr>
+            <tr>
+                <td>1次失误</td>
+                <td>红</td>
+                <td>蓝</td>
+                <td>黄</td>
+                <td>绿</td>
+            </tr>
+            <tr>
+                <td>2次失误</td>
+                <td>蓝</td>
+                <td>红</td>
+                <td>黄</td>
+                <td>绿</td>
+            </tr>
+        </table>
+
+        <h1><a id="title-6" class="anchor" href="#title-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>他叫什么？模块</h1>
 
         <h1><a id="title-7" class="anchor" href="#title-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>记忆模块</h1>
+
+        <style>
+            .class-table-7 {
+                border-collapse: collapse;
+                width: 60%;
+            }
+        
+            .class-table-7 th, td {
+                /* border: none; */
+                border: 1px solid black;
+                padding: 4px;
+                text-align: center;
+            }
+
+            .class-table-7 td:nth-child(1) {
+                width: 60%;
+            }
+            .class-table-7 td:nth-child(2) {
+                width: 20%;
+            }
+            .class-table-7 td:nth-child(2) {
+                width: 20%;
+            }
+        </style>
+        <table class="class-table-7">
+            <tr>
+                <td><input type="text" id="input_7_1" style="width: 100%;" onkeydown="actFunc7(event,1)"></td>
+                <td id="result_7_1_1"></td>
+                <td id="result_7_1_2"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="input_7_2" style="width: 100%;" onkeydown="actFunc7(event,2)"></td>
+                <td id="result_7_2_1"></td>
+                <td id="result_7_2_2"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="input_7_3" style="width: 100%;" onkeydown="actFunc7(event,3)"></td>
+                <td id="result_7_3_1"></td>
+                <td id="result_7_3_2"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="input_7_4" style="width: 100%;" onkeydown="actFunc7(event,4)"></td>
+                <td id="result_7_4_1"></td>
+                <td id="result_7_4_2"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="input_7_5" style="width: 100%;" onkeydown="actFunc7(event,5)"></td>
+                <td id="result_7_5_1"></td>
+                <td id="result_7_5_2"></td>
+            </tr>
+        </table>
+        <p>
+            <button class="w3-button w3-green" onclick="reset7()">重置</button>
+            <button class="w3-button w3-blue" onclick="undo7()">撤销</button>
+        </p>
 
         <h1><a id="title-8" class="anchor" href="#title-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>摩斯电码</h1>
 
         <p>请输入摩斯电码片段（用 <span>. - /</span> 表示，单词间的分割可用 <span>//</span> 表示）：</p>
-        <p><input class="w3-input" type="text" style="font-family: 'Courier New', Courier, monospace;" id="input_8"></p>
+        <p><input class="w3-input" type="text" style="font-family: 'Courier New', Courier, monospace;" id="input_8" onkeyup="actFunc8(this.value)"></p>
         <p id="result_8_1">原文 1：<br>匹配 1：<br>译文 1：<br>回复 1：</p>
         <p id="result_8_2">原文 2：<br>匹配 2：<br>译文 2：<br>回复 2：</p>
         <p id="result_8_3">原文 3：<br>匹配 3：<br>译文 3：<br>回复 3：</p>
@@ -154,7 +274,7 @@
         <h1><a id="title-9" class="anchor" href="#title-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>复杂线路</h1>
 
         <p>请依次输入（线路有红色、线路有蓝色、带有★标记、LED 点亮）：</p>
-        <p><input class="w3-input" type="text" id="input_9"></p>
+        <p><input class="w3-input" type="text" id="input_9" onkeyup="actFunc9(this.value)"></p>
         <p id="result_9">操作：</p>
 
         <h1><a id="title-10" class="anchor" href="#title-10" aria-hidden="true"><span class="octicon octicon-link"></span></a>顺序线路</h1>
@@ -194,5 +314,8 @@
         <p><button class="w3-button w3-green" onclick="reset12()">重置</button></p>
 
         <h1><a id="title-13" class="anchor" href="#title-13" aria-hidden="true"><span class="octicon octicon-link"></span></a>旋钮模块</h1>
+        
+        <p>仅考虑左半边足以判断。</p>
+
     </div>
 </body>
